@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollToPlugin.min.js"></script>
+    <script defer src="./scripts/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уберем</title>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <nav>
+            <div class="container nav-container">
+                <div class="logo_and_nav-location">
+                    <div class="logo">
+                        <h1 class="logo-title">уберем.</h1>
+                        <div class="logo-holder">
+                            <img src="./img/Nav/logo.png" alt="уберем.">
+                        </div>
+                    </div>
+                    <div class="nav-location">
+                        <button id="home" class="checked">Дом</button>
+                        <button id="office">Офис</button>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="">После ремонта</a></li>
+                    <li><a href="">Генеральная уборка</a></li>
+                    <li><a href="">Регулярная уборка</a></li>
+                    <li><a href="">Мойка окон</a></li>
+                </ul>
+                <div class="nav-contacts_and_nav-hours">
+                    <a href="tel:+380674016977">+380 67 401 69 77</a>
+                    <span class="divider">|</span>
+                    <span>24/7</span>
+                </div>
+                <button class="burger closed">
+                    <span class="top"></span>
+                    <span class="bottom"></span>
+                </button>
+            </div>
+        </nav>
+        <div class="header_main">
+            <img src="./img/header.png" alt="header">
+            <div class="header_main__description">
+                <div class="description">
+                    <h1 class="description_title">
+                        Уборка квартир
+                        в Киеве
+                    </h1>
+                    <p>Мы уберем у вас дома или в офисе. Наведем чистоту после ремонта и проведем генеральную
+                        уборку.</p>
+                </div>
+            </div>
+        </div>
+        <button class="order"><span>Заказать<br>уборку</span></button>
+    </header>
+    <main>
+        <section class="features">
+            <div class="container features-container">
+                <ul class="features-list">
+                    <li class="feature">
+                        <div class="feature-label">
+                            <h6 class="feature-title feature-title-personal">Тщательно отобранный персонал</h6>
+                            <img src="./img/features/personal.png" alt="Personal">
+                        </div>
+                        <div class="feature-description">
+                            <p>Не нужно тратить время, силы и ресурсы на разме- щение вакансий,
+                                проведе- ние собеседований, про- верку кандидатов на должность уборщицы.
+                                За счет больших объемов мы можем сделать это эффективнее.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="feature">
+                        <div class="feature-label">
+                        <h6 class="feature-title feature-title-chemistry">Качественная <br>эко-химия</h6>
+                        <img src="./img/features/chemistry.png" alt="Chemistry">
+                        </div>
+                        <div class="feature-description">
+                            <p>Не нужно тратить время, силы и ресурсы на разме- щение вакансий,
+                                проведе- ние собеседований, про- верку кандидатов на должность уборщицы.
+                                За счет больших объемов мы можем сделать это эффективнее.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="feature">
+                        <div class="feature-label">
+                        <h6 class="feature-title feature-title-quality">Контролируем качество</h6>
+                        <img src="./img/features/quality.png" alt="Quality">
+                        </div>
+                        <div class="feature-description">
+                            <p>Не нужно тратить время, силы и ресурсы на разме- щение вакансий,
+                                проведе- ние собеседований, про- верку кандидатов на должность уборщицы.
+                                За счет больших объемов мы можем сделать это эффективнее.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="feature">
+                        <div class="feature-label">
+                        <h6 class="feature-title feature-title-phone">Работаем круглосуточно</h6>
+                        <img src="./img/features/phone.png" alt="Phone">
+                        </div>
+                        <div class="feature-description">
+                            <p>Не нужно тратить время, силы и ресурсы на разме- щение вакансий,
+                                проведе- ние собеседований, про- верку кандидатов на должность уборщицы.
+                                За счет больших объемов мы можем сделать это эффективнее.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="how-clean">
+            <div class="how-clean_content">
+                <div class="container">
+                    <div class="how-clean_description">
+                        <h2>Как мы убираем</h2>
+                        <p>Клинер приезжает в назначенное время со всем необходимым и сразу приступает к делу. Вам
+                            остаётся
+                            только оценить результат.</p>
+                    </div>
+                </div>
+                <div class="how-clean-poster_and_menu">
+                    <div class="menu_and_poster-container">
+                        <div class="images">
+                            <div class="how-clean-image-holder showed active" data-name="kitchen">
+                                <img src="img/menu/kitchen.png" alt="Room">
+                                <div class="how-clean-marks">
+                                    <div class="mark" data-coordinates="30 50">
+                                        <span class="marks-label">Чистим фасад вытяжки</span>
+                                        <span class="circle">+</span>
+                                    </div>
+                                    <div class="mark" data-coordinates="70 70">
+                                        <span class="marks-label">Чистим фасад вытяжки</span>
+                                        <span class="circle">+</span>
+                                    </div>
+                                    <div class="mark" data-coordinates="14 17">
+                                        <span class="marks-label">Чистим фасад вытяжки</span>
+                                        <span class="circle">+</span>
+                                    </div>
+                                    <div class="mark" data-coordinates="60 20">
+                                        <span class="marks-label">Чистим фасад вытяжки</span>
+                                        <span class="circle">+</span>
+                                    </div>
+                                    <div class="mark" data-coordinates="50 67">
+                                        <span class="marks-label">Чистим фасад вытяжки</span>
+                                        <span class="circle">+</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="how-clean-image-holder hidden" data-name="rooms">
+                                <img src="img/menu/bathroom.png" alt="Room">
+                                <div class="how-clean-marks">
+                                    <div class="mark" data-coordinates="30 50">
+                                        <span class="marks-label">Чистим фасад вытяжки</span>
+                                        <span class="circle">+</span>
+                                    </div>
+                                    <div class="mark" data-coordinates="70 70">
+                                        <span class="marks-label">Чистим фасад вытяжки</span>
+                                        <span class="circle">+</span>
+                                    </div>
+                                    <div class="mark" data-coordinates="14 17">
+                                        <span class="marks-label">Чистим фасад вытяжки</span>
+                                        <span class="circle">+</span>
+                                    </div>
+                                    <div class="mark" data-coordinates="60 20">
+                                        <span class="marks-label">Чистим фасад вытяжки</span>
+                                        <span class="circle">+</span>
+                                    </div>
+                                    <div class="mark" data-coordinates="50 67">
+                                        <span class="marks-label">Чистим фасад вытяжки</span>
+                                        <span class="circle">+</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="how-clean-image-holder hidden" data-name="bathroom">
+                                <img src="img/menu/kitchen.png" alt="Room">
+                                <div class="how-clean-marks">
+                                    <div class="mark" data-coordinates="30 50">
+                                        <span class="marks-label">Чистим фасад вытяжки</span>
+                                        <span class="circle">+</span>
+                                    </div>
+                                    <div class="mark" data-coordinates="70 70">
+                                        <span class="marks-label">Чистим фасад вытяжки</span>
+                                        <span class="circle">+</span>
+                                    </div>
+                                    <div class="mark" data-coordinates="14 17">
+                                        <span class="marks-label">Чистим фасад вытяжки</span>
+                                        <span class="circle">+</span>
+                                    </div>
+                                    <div class="mark" data-coordinates="60 20">
+                                        <span class="marks-label">Чистим фасад вытяжки</span>
+                                        <span class="circle">+</span>
+                                    </div>
+                                    <div class="mark" data-coordinates="50 67">
+                                        <span class="marks-label">Чистим фасад вытяжки</span>
+                                        <span class="circle">+</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="how-clean-image-holder hidden" data-name="hallway">
+                                <img src="img/menu/bathroom.png" alt="Room">
+                                <div class="how-clean-marks">
+                                    <div class="mark" data-coordinates="30 50">
+                                        <span class="marks-label">Чистим фасад вытяжки</span>
+                                        <span class="circle">+</span>
+                                    </div>
+                                    <div class="mark" data-coordinates="70 70">
+                                        <span class="marks-label">Чистим фасад вытяжки</span>
+                                        <span class="circle">+</span>
+                                    </div>
+                                    <div class="mark" data-coordinates="14 17">
+                                        <span class="marks-label">Чистим фасад вытяжки</span>
+                                        <span class="circle">+</span>
+                                    </div>
+                                    <div class="mark" data-coordinates="60 20">
+                                        <span class="marks-label">Чистим фасад вытяжки</span>
+                                        <span class="circle">+</span>
+                                    </div>
+                                    <div class="mark" data-coordinates="50 67">
+                                        <span class="marks-label">Чистим фасад вытяжки</span>
+                                        <span class="circle">+</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="how-clean-menu">
+                            <h3>Как мы убираем</h3>
+                            <ul class="menu-list">
+                                <li data-name="kitchen" class="active">Кухня</li>
+                                <li data-name="rooms">Комнаты</li>
+                                <li data-name="bathroom">Ванная</li>
+                                <li data-name="hallway">Прихожая</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="anchor"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,721 @@
+@font-face {
+    font-family: 'TT Travels';
+    src: url("../fonts/TTTravels-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'TT Travels';
+    src: url("../fonts/TTTravels-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'TT Travels';
+    src: url("../fonts/TTTravels-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'TT Travels';
+    src: url("../fonts/TTTravels-DemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'TT Travels';
+    src: url("../fonts/TTTravels-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 600;
+}
+.wrapper{
+    color: #404040;
+    font-family: 'TT Travels', sans-serif;
+}
+.wrapper a{
+    color: #404040;
+}
+.container{
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+/*header*/
+header{
+    position: relative;
+}
+/*Nav*/
+nav{
+    width: 100%;
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    position: absolute;
+    z-index: 2;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.logo_and_nav-location{
+    display: flex;
+    align-items: center;
+}
+.nav-location{
+    background-color: #fff;
+    border-radius: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 28px;
+    width: 131px;
+    height: 37px;
+    padding: 3px;
+    overflow: hidden;
+}
+.nav-location button{
+    border: none;
+    background: #fff;
+    border-radius: 34px;
+    padding: 8px 12px;
+    height: 100%;
+    color: #636C81;
+    position: relative;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 14px;
+}
+.nav-location button.checked{
+    color: #fff;
+}
+.nav-location button.checked:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #5A30F0;
+    border-radius: 34px;
+    z-index: -1;
+}
+
+.logo-title{
+    text-indent: -1000000px;
+    position: absolute;
+}
+.nav-links{
+    display: flex;
+}
+.nav-links a{
+    font-weight: 500;
+    font-size: 16px;
+}
+.nav-links li:not(:first-child){
+    margin-left: 32px;
+}
+.nav-links li{
+    text-align: center;
+}
+.nav-contacts_and_nav-hours .divider{
+    margin: 0 15px;
+}
+.burger{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 4;
+    background-color: unset;
+    border: none;
+    position: relative;
+}
+.burger span{
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #404040;
+    transition: 0.3s;
+}
+.burger.closed span{
+    transform: rotate(0);
+}
+.burger.closed .top{
+    top: 30%;
+}
+.burger.closed .bottom{
+    top: 70%;
+}
+.burger.opened .top{
+    top: 50%;
+    transform: rotate(45deg);
+}
+.burger.opened .bottom{
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+/*/Nav*/
+.header_main{
+    display: flex;
+}
+.header_main img{
+    width: 50%;
+}
+.header-image-holder{
+    overflow: hidden;
+}
+.header-image-holder img{
+    width: 100%;
+}
+.header_main__description{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.description{
+    width: 400px;
+}
+.header_main__description .description_title{
+    font-weight: 400;
+    font-size: 76px;
+    line-height: 110%;
+    margin-bottom: 30px;
+}
+.header_main__description p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+}
+.order{
+    font-family: 'TT Travels', sans-serif;
+    font-style: normal;
+    position: fixed;
+    z-index: 5;
+    width: 195px;
+    height: 195px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-15deg);
+    background: #5A30F0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.order span{
+    display: block;
+    pointer-events: none;
+}
+
+/*/Header*/
+
+/*Main*/
+main{
+    padding: 100px 0 0;
+}
+.features-list{
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-column-gap: 40px;
+    justify-content: space-between;
+}
+.feature{
+    width: 100%;
+    height: 328px;
+    background: #F3F6FB;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.feature h6{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+    display: block;
+    width: 219px;
+    margin-top: 20px;
+}
+.feature img{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.feature-description{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    background-color: #5A30F0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #fff;
+    padding: 30px;
+}
+.feature:hover .feature-description{
+    opacity: 1;
+
+}
+
+/*how_clean*/
+.how-clean{
+    margin: 149px 0 0;
+}
+.how-clean .container {
+    display: flex;
+    justify-content: center;
+}
+.menu_and_poster-container{
+    height: 100%;
+    margin: unset;
+}
+.how-clean_content{
+}
+.how-clean_description{
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+}
+.how-clean_description > *{
+    width: 50%;
+}
+.how-clean h2{
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 120%;
+}
+.how-clean p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+}
+.how-clean-poster_and_menu{
+    margin-top: 52px;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+}
+.images{
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+}
+.how-clean-image-holder{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-origin: left;
+    transition: 1s;
+}
+.how-clean-image-holder:not(.active){
+    right: -100%;
+}.how-clean-image-holder.showed{
+     right: 0;
+     transform: scale(1.1);
+     z-index: 2;
+}
+.how-clean-image-holder.hidden{
+    right: -100%;
+    transform: scale(1.5);
+    z-index: 2;
+}
+.how-clean-image-holder.active{
+    right: 0;
+    z-index: 1;
+    transform: scale(1);
+}
+.how-clean-marks{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.how-clean-marks .mark{
+    position: absolute;
+    opacity: 0;
+}
+.how-clean-marks .mark .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 0;
+    border-radius: 50%;
+    background-color: #5A30F0;
+    color: #fff;
+    font-size: 30px;
+    transition: 0.3s;
+}
+.how-clean-marks .mark:hover .circle{
+    transform: rotate(45deg);
+}
+.how-clean-marks .mark .circle:before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #5A30F0;
+    border-radius: 50%;
+    opacity: 0.2;
+}
+.how-clean-marks .marks-label{
+    position: absolute;
+    top: -55px;
+    left: -25px;
+    width: max-content;
+    padding: 8px 10px;
+    border-radius: 2px;
+    background-color: #fff;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: 0.3s;
+}
+.how-clean-marks .mark:hover .marks-label{
+    transform: scaleX(1);
+}
+.how-clean-marks .marks-label:before{
+    content: '';
+    position: absolute;
+    left: 30px; bottom: -20px;
+    border: 10px solid transparent;
+    border-top: 10px solid #fff;
+}
+
+
+
+
+
+.how-clean-image-holder img{
+    height: 100%;
+    width: 100%;
+}
+.how-clean-menu{
+    height: 100%;
+    width: 30%;
+    background-color: #5A30F0;
+    transform: translateX(-300%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.how-clean-menu h3{
+    position: absolute;
+    width: 136px;
+    height: 21px;
+    left: 53px;
+    top: 35px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+.menu-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.how-clean-menu li{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 120%;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #fff;
+    padding-left: 60px;
+}
+.how-clean-menu li:before{
+    display: block;
+    content: '→';
+    height: 100%;
+    width: 0;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: 0.7s;
+    overflow: hidden;
+}
+.how-clean-menu li.active{
+    opacity: 1;
+    transform: skew(-15deg);
+    cursor: default;
+    pointer-events: none;
+}
+.how-clean-menu li.active:before{
+    width: 60px;
+    transform: scaleX(1);
+}
+.how-clean-menu li:not(:last-child){
+    margin-bottom: 22px;
+}
+.how-clean-menu li:hover{
+    transform: skew(-15deg);
+}
+
+
+/*Media*/
+@media screen and (max-width: 1024px){
+    .container{
+        max-width: 970px;
+    }
+    .nav-links{
+        margin: 15px;
+        width: min-content;
+    }
+    .header_main__description .description_title{
+        font-size: 55px;
+    }
+    .features-list{
+        grid-template-columns: repeat(4, 215px);
+    }
+    .feature{
+        height: 270px;
+    }
+    .feature-description{
+        font-size: 13px;
+    }
+    .how-clean{
+        margin: 100px 0 0;
+    }
+    .how-clean_description{
+        width: 715px;
+    }
+    .how-clean_description h2{
+        font-size: 25px;
+    }
+    .how-clean_description p{
+        font-size: 15px;
+    }
+    .how-clean-menu li{
+        font-size: 35px;
+    }
+    .how-clean-poster_and_menu .container{
+        max-width: unset;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .how-clean-poster_and_menu{
+        height: 600px;
+    }
+}
+@media screen and (max-width: 768px){
+    .container{
+        max-width: 700px;
+    }
+    .nav-links{
+        order: 3;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        margin: 0;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        transform: translateY(100%);
+        background-color: #5A30F0;
+        padding: 25px;
+        transform-origin: top;
+    }
+    .nav-links li:not(:first-child){
+        margin-left: unset;
+    }
+    .nav-links li:not(:last-child){
+        margin-bottom: 15px;
+    }
+    .nav-links li a{
+        color: #fff;
+    }
+    .nav-contacts_and_nav-hours{
+        order: 2;
+    }
+    .description{
+        width: 300px;
+    }
+    .header_main__description .description_title{
+        font-size: 40px;
+    }
+    .header_main__description p{
+        font-size: 15px;
+    }
+    .features-list{
+        grid-template-columns: repeat(2, 270px);
+        grid-gap: 40px;
+        justify-content: space-evenly;
+    }
+    .feature{
+        height: 290px;
+    }
+    .feature-description{
+        font-size: 15px;
+    }
+    .how-clean_description{
+        width: 545px;
+    }
+    .how-clean_description p {
+        font-size: 13px;
+    }
+    .how-clean-poster_and_menu{
+        height: 450px;
+    }
+    .how-clean-menu li{
+        font-size: 25px;
+    }
+    .how-clean-menu li.active:before{
+        width: 35px;
+    }
+}
+@media screen and (max-width: 425px){
+    .nav-contacts_and_nav-hours{
+        display: none;
+    }
+    .logo_and_nav-location{
+        margin-left: 20%;
+    }
+    .burger{
+        margin-right: 10px;
+    }
+    .header_main{
+        flex-direction: column;
+    }
+    .header_main img,
+    .header_main .header_main__description{
+        width: 100%;
+    }
+    .description{
+        margin-top: 50px;
+        text-align: center;
+    }
+    .header_main__description .description_title{
+        font-size: 30px;
+    }
+    .how-clean_description p{
+        font-size: 17px;
+    }
+    .features-list{
+        padding: 0 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .feature{
+        height: 250px;
+    }
+    .feature-label h6{
+        width: unset;
+        padding: 0 20px;
+        font-size: 18px;
+    }
+    .feature-label img{
+        width: 85%;
+    }
+    .how-clean_description{
+        flex-direction: column;
+        width: 300px;
+    }
+    .how-clean_description > *{
+        width: 100%;
+    }
+    .how-clean_description h2{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .how-clean-menu{
+        width: 100%;
+        height: unset;
+    }
+    .how-clean-menu h3{
+        display: none;
+    }
+    .menu-list{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .how-clean-menu li{
+        padding: 20px 0;
+        font-size: 16px;
+    }
+    .how-clean-menu li:not(:last-child) {
+        margin-bottom: unset;
+    }
+    .images{
+        position: relative;
+        width: 100%;
+        height: 300px;
+    }
+    .how-clean-poster_and_menu{
+        height: unset;
+    }
+    .menu_and_poster-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .how-clean-image-holder{
+        transition: unset;
+    }
+    .order{
+        width: 120px;
+        height: 120px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 375px){
+    .logo_and_nav-location{
+        margin-left: 3%;
+    }
+    main{
+        padding: 50px 0 0;
+    }
+    .features-list{
+        grid-template-columns: 1fr;
+    }
+    .feature-label img{
+        width: 60%;
+    }
+    .how-clean_description p{
+        padding: 0 10px;
+    }
+    .how-clean-menu li.active:before{
+        width: 17px;
+    }
+    .nav-links{
+        transform: translateY(100%);
+        width: 100%;
+    }
+}
+
+
+
+
+
