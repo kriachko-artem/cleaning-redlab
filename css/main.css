@@ -643,11 +643,13 @@ main{
     .feature-label img{
         width: 85%;
     }
+    .feature-description{
+        padding: 20px;
+        font-size: 13px;
+    }
     .how-clean_description{
         flex-direction: column;
         width: 300px;
-        padding: 20px;
-        font-size: 12px;
     }
     .how-clean_description > *{
         width: 100%;
