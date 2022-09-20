@@ -57,14 +57,14 @@ const menuParams = {
 const tl = gsap.timeline({
     scrollTrigger: {
         trigger: cleanHolder,
-        start: `top ${window.innerWidth>425?60+'%':80+'%'}`,
+        start: `top ${window.innerWidth>500?60+'%':80+'%'}`,
         toggleActions: "play none none reverse",
     }});
 tl.to('.how-clean_description', {
-    translateY: `${window.innerWidth>425?-100+'%': 0}`,
+    translateY: `${window.innerWidth>500?-100+'%': 0}`,
     duration: 1.5,
 }).addLabel("start", "0")
-if (window.innerWidth>425){
+if (window.innerWidth>500){
     tl.to(cleanHolder, {
         translateX: 0,
         bottom: 0,
@@ -115,7 +115,7 @@ menuListItems.forEach(item=>{
     //При клике ставим как активную картинку
     item.addEventListener('click',(event)=>{
         menuParams.setActive(event.target)
-        if (window.innerWidth<=425){
+        if (window.innerWidth<=500){
             gsap.fromTo(menuParams.showedImage,{
                 translateX: 100+'%'
             },{
