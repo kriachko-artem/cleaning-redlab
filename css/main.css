@@ -601,7 +601,7 @@ main{
         width: 35px;
     }
 }
-@media screen and (max-width: 425px){
+@media screen and (max-width: 500px){
     .nav-contacts_and_nav-hours{
         display: none;
     }
