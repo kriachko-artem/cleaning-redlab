@@ -645,7 +645,7 @@ main{
     }
     .feature-description{
         padding: 20px;
-        font-size: 13px;
+        font-size: 12px;
     }
     .how-clean_description{
         flex-direction: column;
