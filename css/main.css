@@ -647,7 +647,7 @@ main{
         flex-direction: column;
         width: 300px;
         padding: 20px;
-        font-size: 13px;
+        font-size: 12px;
     }
     .how-clean_description > *{
         width: 100%;
