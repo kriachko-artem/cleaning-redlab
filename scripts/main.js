@@ -39,7 +39,6 @@ const menuParams = {
             if(item.dataset.name === elem.dataset.name){
                 item.classList.add('active')
                 menuParams.showedImage = item
-                
                 gsap.to(item.children[1].children,{
                     opacity: 1,
                     stagger: 0.2,
@@ -157,7 +156,15 @@ orderButton.addEventListener('mouseleave',()=>{
     hideOrderButton()
 })
 window.addEventListener('scroll',hideOrderButton)
-
+//Показать label у mark
+marks.forEach(item=>{
+    item.addEventListener('click',()=>{
+        if (item.classList.contains('active')){
+            item.classList.remove('active')
+        }
+        item.classList.add('active')
+    })
+})
 
 //Открыть navlinks
 burger.addEventListener('click',()=>{

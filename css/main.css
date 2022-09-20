@@ -410,6 +410,9 @@ main{
     border: 10px solid transparent;
     border-top: 10px solid #fff;
 }
+.how-clean-marks .mark.active .marks-label{
+    transform: scaleX(1);
+}
 
 
 
@@ -688,6 +691,9 @@ main{
         width: 120px;
         height: 120px;
         font-size: 15px;
+    }
+    .how-clean-marks .marks-label{
+        font-size: 10px;
     }
 }
 @media screen and (max-width: 375px){
